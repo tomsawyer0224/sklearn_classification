@@ -10,7 +10,7 @@
 ```
 python train.py --config_file './configs/train/RidgeClassifier.yaml'
 ```
-  Navigate to the "./results/RidgeClassifier" directory for more details.
+> See the "./results/RidgeClassifier" directory for more details.
 ![image](https://github.com/user-attachments/assets/29ba3631-1b33-419c-9ff2-8477237159aa) \
 ![image](https://github.com/user-attachments/assets/5b9b9313-4a0b-4b37-b523-463ec9684306)
 ```
@@ -35,7 +35,7 @@ weighted avg       0.81      0.81      0.81     10000
 ```
 python train.py --config_file './configs/search/GridSearchCV_SGDClassifier.yaml'
 ```
-  It will search in the parameter space to find the best configuration and use that one to refit the model. The best configuration is located in the file "./results/SGDClassifier/version_0/texts/best_config.yaml". Navigate to the "./results/SGDClassifier" directory for more details.
+> It will search in the parameter space to find the best configuration and use that one to refit the model. The best configuration is located in the file "./results/SGDClassifier/version_0/texts/best_config.yaml". Navigate to the "./results/SGDClassifier" directory for more details.
   ![image](https://github.com/user-attachments/assets/777637e4-2b18-4d6f-8738-88ec4f5da347) \
   ![image](https://github.com/user-attachments/assets/43a84f8f-4341-4e0c-84e7-ea8643c3cfda) 
 ```
@@ -66,7 +66,7 @@ weighted avg       0.91      0.90      0.90       540
 ```
 python validate.py --config_file './configs/validation/SVC.yaml'
 ```
-Navigate to the './results/SVC/version_0' directory for more details.
+> See the './results/SVC/version_0' directory for more details.
 ![image](https://github.com/user-attachments/assets/d1b7b2d0-9ba7-49b7-84ea-655861f9fba3) \
 ![image](https://github.com/user-attachments/assets/dd080565-1f40-4bc0-9f59-4c00ffbb7853) \
 6. For simplicity, this project doesn't provide a professional dataset object (like PyTorch). If you use other datasets, modify the python file './datasets.py'.
