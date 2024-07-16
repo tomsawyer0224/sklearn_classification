@@ -12,8 +12,8 @@
      ```
      see the "./resuls/RidgeClassifier" folder for more details.
      ![image](https://github.com/user-attachments/assets/29ba3631-1b33-419c-9ff2-8477237159aa) \
-     ![image](https://github.com/user-attachments/assets/5b9b9313-4a0b-4b37-b523-463ec9684306) \
-     
+     ![image](https://github.com/user-attachments/assets/5b9b9313-4a0b-4b37-b523-463ec9684306)
+```
                        precision    recall  f1-score   support
     
      T-shirt/top       0.78      0.80      0.79      1000
@@ -30,6 +30,6 @@
         accuracy                           0.81     10000
        macro avg       0.81      0.81      0.81     10000
     weighted avg       0.81      0.81      0.81     10000
-
+```
 
 
