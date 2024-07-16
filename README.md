@@ -35,15 +35,32 @@
   ```
   python train.py --config_file './configs/search/GridSearchCV_SGDClassifier.yaml'
   ```
-  It will search in the parameter space to find the best config and use that one to refit the model.
-  Navigate to the "./results/SGDClassifier" directory for more details.
+  It will search in the parameter space to find the best config and use that one to refit the model. The best config is located in the file "./results/SGDClassifier/version_0/texts/best_config.yaml". Navigate to the "./results/SGDClassifier" directory for more details.
   ![image](https://github.com/user-attachments/assets/777637e4-2b18-4d6f-8738-88ec4f5da347) \
   ![image](https://github.com/user-attachments/assets/43a84f8f-4341-4e0c-84e7-ea8643c3cfda) 
   ```
-  the best config is located in the file "./results/SGDClassifier/version_0/texts/best_config.yaml":
+  best_config.yaml
   model_config:
     alpha: 0.01
     loss: log_loss
+  ```
+  ```
+                precision    recall  f1-score   support
+  
+           0       0.98      0.96      0.97        53
+           1       0.93      0.75      0.83        53
+           2       1.00      0.96      0.98        53
+           3       0.91      0.77      0.84        53
+           4       1.00      0.91      0.95        57
+           5       0.90      0.98      0.94        56
+           6       0.95      0.96      0.95        54
+           7       0.93      0.96      0.95        54
+           8       0.76      0.90      0.82        52
+           9       0.73      0.84      0.78        55
+  
+    accuracy                           0.90       540
+   macro avg       0.91      0.90      0.90       540
+  weighted avg       0.91      0.90      0.90       540
   ```
 
 
