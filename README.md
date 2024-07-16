@@ -2,7 +2,7 @@
 # About this project:
 1. This project provides an easy way to use many classification models in the scikit-learn library.
 2. You can train, tune the hyper-parameters, and validate any model by using only one command line.
-3. Supports two datasets (handwritten, fashion mnist) and almost classification models (./configs/train)
+3. Supports two datasets (handwritten, fashion mnist) and almost classification models.
 # How to use:
 1. Clone project; cd to sklearn_classification.
 2. Install the requirements: pip install -q -r requirements.txt
