@@ -1,0 +1,20 @@
+general_config:
+    search: "RandomizedSearchCV"
+    model: "SGDClassifier"
+    dataset: "digit"
+    root_log_dir: "./results"
+model_config:
+    random_state: 42
+search_config:
+    param_distributions:
+        alpha: uniform(loc = 0.0001, scale = 0.01-0.0001)
+        loss: ["hinge", "log_loss"]
+        max_iter: randint(low = 1, high = 100)
+    n_iter: 10
+    scoring: "accuracy" # "f1"
+    n_jobs:
+    #refit: True
+    cv:
+    verbose: 0
+    random_state: 42
+    return_train_score: False
