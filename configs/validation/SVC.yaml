@@ -1,0 +1,60 @@
+general_config:
+    model: "SVC"
+    dataset: "digit"
+    root_log_dir: "./results"
+learning: # arguments of LearningCurveDisplay.from_estimator()
+    groups:
+    train_sizes: "np.linspace(0.1, 1.0, 10)" # [0.1, 0.33, 0.55, 0.78, 1.]
+    cv: &cv 10
+    scoring: &scoring "accuracy"
+    exploit_incremental_learning: False
+    n_jobs: &n_jobs
+    pre_dispatch: &pre_dispatch "all"
+    verbose: &verbose 0
+    shuffle: &shuffle False
+    random_state: 42
+    #error_score:
+    fit_params: &fit_params 
+    #ax:
+    negate_score: &negate_score False
+    score_name: &score_name
+    score_type: &score_type "both"
+    std_display_style: &std_display_style "fill_between"
+    line_kw: &line_kw 
+    fill_between_kw: &fill_between_kw
+    errorbar_kw: &errorbar_kw
+validation: # arguments of ValidationCurveDisplay.from_estimator()
+    param_name: "C"
+    param_range: "np.logspace(-7, 3, 10)"
+    cv: *cv
+    scoring: *scoring
+    n_jobs: *n_jobs
+    pre_dispatch: *pre_dispatch #"all"
+    verbose: *verbose
+    #error_score:
+    fit_params: *fit_params
+    #ax:
+    negate_score: *negate_score
+    score_name: *score_name
+    score_type: *score_type
+    std_display_style: *std_display_style
+    line_kw: *line_kw
+    fill_between_kw: *fill_between_kw
+    errorbar_kw: *errorbar_kw
+model_config:
+    kernel: "rbf"
+    degree: 3
+    gamma: "scale"
+    coef0: 0.0
+    shrinking: True
+    probability: False
+    tol: 1.0e-3
+    cache_size: 200
+    class_weight: 
+    verbose: False
+    max_iter: -1
+    decision_function_shape: "ovr"
+    break_ties: False
+    random_state: 42
+
+
