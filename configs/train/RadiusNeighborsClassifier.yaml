@@ -1,0 +1,14 @@
+general_config:
+    model: "RadiusNeighborsClassifier"
+    dataset: "digit"
+    root_log_dir: "./results"
+model_config:
+    radius: 1.0
+    weights: "uniform"
+    algorithm: "auto"
+    leaf_size: 30
+    p: 2
+    metric: "minkowski"
+    outlier_label: 
+    metric_params: 
+    n_jobs: 

@@ -1,0 +1,21 @@
+general_config:
+    model: "LogisticRegression"
+    dataset: "digit"
+    root_log_dir: "./results"
+model_config:
+    penalty: "l2"
+    dual: False
+    tol: 1.0e-4
+    C: 1.0
+    fit_intercept: True
+    intercept_scaling: 1
+    class_weight:
+    random_state: 42
+    solver: "lbfgs"
+    max_iter: 100
+    multi_class: "auto"
+    verbose: 0
+    warm_start: False
+    n_jobs:
+    l1_ratio:
+

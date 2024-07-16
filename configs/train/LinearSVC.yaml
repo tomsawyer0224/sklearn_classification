@@ -1,0 +1,17 @@
+general_config:
+    model: "LinearSVC"
+    dataset: "digit"
+    root_log_dir: "./results"
+model_config:
+    penalty: "l2"
+    loss: "squared_hinge"
+    dual: "auto"
+    tol: 1.0e-4
+    C: 1.0
+    multi_class: "ovr"
+    fit_intercept: True
+    intercept_scaling: 1
+    class_weight: 
+    verbose: 0
+    random_state: 42
+    max_iter: 1000

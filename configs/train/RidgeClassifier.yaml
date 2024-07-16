@@ -1,0 +1,14 @@
+general_config:
+    model: "RidgeClassifier"
+    dataset: "fashion" # "fashion"
+    root_log_dir: "./results"
+model_config:
+    alpha: 1.0 # 1.0
+    fit_intercept: True
+    copy_X: True
+    max_iter:
+    tol: 1.0e-4
+    class_weight:
+    solver: "auto"
+    positive: False
+    random_state: 42

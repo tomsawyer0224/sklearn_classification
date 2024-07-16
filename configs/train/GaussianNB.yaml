@@ -1,0 +1,7 @@
+general_config:
+    model: "GaussianNB"
+    dataset: "digit"
+    root_log_dir: "./results"
+model_config:
+    priors:
+    var_smoothing: 1.0e-09

@@ -1,0 +1,14 @@
+general_config:
+    model: "GaussianProcessClassifier"
+    dataset: "digit"
+    root_log_dir: "./results"
+model_config:
+    kernel: 
+    optimizer: "fmin_l_bfgs_b"
+    n_restarts_optimizer: 0
+    max_iter_predict: 100
+    warm_start: False
+    copy_X_train: True
+    random_state: 42
+    multi_class: "one_vs_rest"
+    n_jobs: 
