@@ -1,12 +1,12 @@
 # This is a personal project, for educational purposes only!
 # About this project:
-  1. This project provides an easy way to use many classification models in the scikit-learn library.
-  2. You can train, tune the hyper-parameters, validate any model by using only one command line.
-  3. Supports two datasets (hand-written, fashion mnist) and almost classification models (./configs/train)
+1. This project provides an easy way to use many classification models in the scikit-learn library.
+2. You can train, tune the hyper-parameters, validate any model by using only one command line.
+3. Supports two datasets (hand-written, fashion mnist) and almost classification models (./configs/train)
 # How to use:
-  1. Clone project, cd to sklearn_classification.
-  2. Install the requirements: pip install -q -r requirements.txt
-  3. To train the model: modify the config file in the "./configs/train" directory (i.e './configs/train/RidgeClassifier.yaml') then run the bellow command:
+1. Clone project, cd to sklearn_classification.
+2. Install the requirements: pip install -q -r requirements.txt
+3. To train the model: modify the config file in the "./configs/train" directory (i.e './configs/train/RidgeClassifier.yaml') then run the bellow command:
      ```
      python train.py --config_file './configs/train/RidgeClassifier.yaml'
      ```
@@ -31,7 +31,7 @@
        macro avg       0.81      0.81      0.81     10000
     weighted avg       0.81      0.81      0.81     10000
 ```
-  4. To tune the hyper-parameters: modify the config file in the "./configs/search" directory (i.e './configs/search/GridSearchCV.yaml') then run the bellow command:
+4. To tune the hyper-parameters: modify the config file in the "./configs/search" directory (i.e './configs/search/GridSearchCV.yaml') then run the bellow command:
   ```
   python train.py --config_file './configs/search/GridSearchCV_SGDClassifier.yaml'
   ```
@@ -60,7 +60,7 @@
   
     accuracy                           0.90       540
    macro avg       0.91      0.90      0.90       540
-  weighted avg       0.91      0.90      0.90       540
+weighted avg       0.91      0.90      0.90       540
   ```
 
 
