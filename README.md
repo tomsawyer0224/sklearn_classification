@@ -5,7 +5,7 @@
 3. Supports two datasets (handwritten, fashion mnist) and almost classification models.
 # How to use:
 1. Clone project; cd to sklearn_classification.
-2. Install the requirements: pip install -q -r requirements.txt
+2. Install the requirements: pip install -q -r requirements.txt.
 3. To train the model: modify the config file in the "./configs/train" directory (for example, './configs/train/RidgeClassifier.yaml'), then run the below command:
 ```
 python train.py --config_file './configs/train/RidgeClassifier.yaml'
