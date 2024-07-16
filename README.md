@@ -84,7 +84,7 @@ def _get_yourdataset(self):
   }
   return ds
 ```
-> modify __init__ method:
+> modify the '__init__' method:
 ```
 def __init__(self):
   assert dataset in ['digit', 'fashion', 'yourdataset'], \
@@ -96,7 +96,7 @@ def __init__(self):
   if dataset == 'yourdataset':
     self.dataset = self._get_yourdataset
 ```
-> Note: The dataset should be grey images of shape (n_samples, height, width) 
+> Note: The dataset should be gray images. It is an array of shape (n_samples, height, width).
 
 
 
