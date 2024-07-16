@@ -62,6 +62,14 @@ loss: log_loss
    macro avg       0.91      0.90      0.90       540
 weighted avg       0.91      0.90      0.90       540
 ```
+5. To know how the hyper-parameters or the dataset size impact on the model's performance: modify the config file in the './configs/validation' directory (i.e './configs/validation/SVC.yaml') then run the bellow command:
+```
+python validate.py --config_file './configs/validation/SVC.yaml'
+```
+Navigate to the './results/SVC/version_0' directory for more details.
+![image](https://github.com/user-attachments/assets/d1b7b2d0-9ba7-49b7-84ea-655861f9fba3) \
+![image](https://github.com/user-attachments/assets/dd080565-1f40-4bc0-9f59-4c00ffbb7853)
+
 
 
 
