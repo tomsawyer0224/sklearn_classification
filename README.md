@@ -12,7 +12,7 @@ python train.py --config_file './configs/train/RidgeClassifier.yaml'
 ```
   Navigate to the "./results/RidgeClassifier" directory for more details.
 ![image](https://github.com/user-attachments/assets/29ba3631-1b33-419c-9ff2-8477237159aa) \
-![image](https://github.com/user-attachments/assets/5b9b9313-4a0b-4b37-b523-463ec9684306)
+![image](https://github.com/user-attachments/assets/5b9b9313-4a0b-4b37-b523-463ec9684306) \
 ```
               precision    recall  f1-score   support
 
