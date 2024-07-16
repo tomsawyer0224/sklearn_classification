@@ -38,7 +38,6 @@ python train.py --config_file './configs/search/GridSearchCV_SGDClassifier.yaml'
 > It will search in the parameter space to find the best configuration and use that one to refit the model. The best configuration is located in the file "./results/SGDClassifier/version_0/texts/best_config.yaml". See the "./results/SGDClassifier" directory for more details.
   ![image](https://github.com/user-attachments/assets/777637e4-2b18-4d6f-8738-88ec4f5da347) \
   ![image](https://github.com/user-attachments/assets/43a84f8f-4341-4e0c-84e7-ea8643c3cfda)
-> 
 ```
 best_config.yaml
 model_config:
