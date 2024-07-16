@@ -1,0 +1,3 @@
+model_config:
+  alpha: 0.01
+  loss: log_loss
