@@ -68,7 +68,10 @@ weighted avg       0.91      0.90      0.90       540
 ```
 python validate.py --config_file './configs/validation/SVC.yaml'
 ```
-> See the './results/SVC/version_0' directory for more details.
+![image](results/SVC/version_0/learning_curve.png) \
+![image](results/SVC/version_0/validation_curve.png)
+
+
 ![image](https://github.com/user-attachments/assets/d1b7b2d0-9ba7-49b7-84ea-655861f9fba3) \
 ![image](https://github.com/user-attachments/assets/dd080565-1f40-4bc0-9f59-4c00ffbb7853) \
 6. For simplicity, this project doesn't provide a professional dataset object (like PyTorch). If you use other datasets, modify the python file './datasets.py'.
