@@ -82,7 +82,7 @@ def _get_yourdataset(self):
   }
   return ds
 ```
-- Modify the '\__init__' method:
+- Modify the '\_\_init\_\_' method:
 ```
 def __init__(self):
   assert dataset in ['digit', 'fashion', 'yourdataset'], \
