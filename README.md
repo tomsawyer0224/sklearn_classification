@@ -68,7 +68,7 @@ python validate.py --config_file './configs/validation/SVC.yaml'
 ![image](results/SVC/version_0/learning_curve.png) \
 ![image](results/SVC/version_0/validation_curve.png) \
 6. For simplicity, this project doesn't provide a professional dataset object (like PyTorch). If you use other datasets, modify the python file './datasets.py'.
-> define a new method
+- Define a new method:
 ```
 def _get_yourdataset(self):
   # do something
@@ -82,7 +82,7 @@ def _get_yourdataset(self):
   }
   return ds
 ```
-> modify the '\__init__' method:
+- Modify the '\__init__' method:
 ```
 def __init__(self):
   assert dataset in ['digit', 'fashion', 'yourdataset'], \
@@ -94,7 +94,7 @@ def __init__(self):
   if dataset == 'yourdataset':
     self.dataset = self._get_yourdataset()
 ```
-> Note: The dataset should be gray images. It is an array of shape (n_samples, height, width).
+Note: The dataset should be gray images. It is an array of shape (n_samples, height, width).
 
 
 
