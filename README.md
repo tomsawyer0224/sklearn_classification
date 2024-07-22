@@ -11,6 +11,9 @@ This project provides an easy way to use many classification models in the sciki
 ```
 python train.py --config_file './configs/train/RidgeClassifier.yaml'
 ```
+![image](results/RidgeClassifier/version_0/images/confusion_matrix.png) \
+![image](results/RidgeClassifier/version_0/images/fashion_predicted.png)
+
 ![image](https://github.com/user-attachments/assets/29ba3631-1b33-419c-9ff2-8477237159aa) \
 ![image](https://github.com/user-attachments/assets/5b9b9313-4a0b-4b37-b523-463ec9684306)
 ```
