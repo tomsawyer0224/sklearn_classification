@@ -2,7 +2,7 @@
 This project provides an easy way to use many classification models in the scikit-learn library.
 # About this project:
 1. This is a personal project, for educational purposes only!
-2. You can train, tune the hyper-parameters, and validate any model by using only one command line.
+2. You can train, tune the hyper-parameters, and validate any model with only one command line.
 3. Supports two datasets (handwritten, fashion mnist) and almost classification models.
 # How to use:
 1. Clone project, cd into sklearn_classification.
@@ -11,7 +11,6 @@ This project provides an easy way to use many classification models in the sciki
 ```
 python train.py --config_file './configs/train/RidgeClassifier.yaml'
 ```
-> See the "./results/RidgeClassifier" directory for more details.
 ![image](https://github.com/user-attachments/assets/29ba3631-1b33-419c-9ff2-8477237159aa) \
 ![image](https://github.com/user-attachments/assets/5b9b9313-4a0b-4b37-b523-463ec9684306)
 ```
