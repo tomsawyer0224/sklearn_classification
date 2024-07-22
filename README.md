@@ -37,9 +37,6 @@ python train.py --config_file './configs/search/GridSearchCV_SGDClassifier.yaml'
 ```
   ![image](results/SGDClassifier/version_0/images/confusion_matrix.png) \
   ![image](results/SGDClassifier/version_0/images/digit_predicted.png)
-  
-  ![image](https://github.com/user-attachments/assets/777637e4-2b18-4d6f-8738-88ec4f5da347) \
-  ![image](https://github.com/user-attachments/assets/43a84f8f-4341-4e0c-84e7-ea8643c3cfda)
 ```
 best_config.yaml
 model_config:
@@ -69,11 +66,7 @@ weighted avg       0.91      0.90      0.90       540
 python validate.py --config_file './configs/validation/SVC.yaml'
 ```
 ![image](results/SVC/version_0/learning_curve.png) \
-![image](results/SVC/version_0/validation_curve.png)
-
-
-![image](https://github.com/user-attachments/assets/d1b7b2d0-9ba7-49b7-84ea-655861f9fba3) \
-![image](https://github.com/user-attachments/assets/dd080565-1f40-4bc0-9f59-4c00ffbb7853) \
+![image](results/SVC/version_0/validation_curve.png) \
 6. For simplicity, this project doesn't provide a professional dataset object (like PyTorch). If you use other datasets, modify the python file './datasets.py'.
 > define a new method
 ```
