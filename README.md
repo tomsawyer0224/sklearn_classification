@@ -7,7 +7,7 @@ This project provides an easy way to use many classification models in the sciki
 # How to use:
 1. Clone project, cd into sklearn_classification.
 2. Install the requirements: pip install -q -r requirements.txt.
-3. To train the model: modify the config file in the "./configs/train" directory (for example, './configs/train/RidgeClassifier.yaml'), then run the below command:
+3. To train the model, modify the config file in the "./configs/train" directory (for example, './configs/train/RidgeClassifier.yaml'), then run the below command:
 ```
 python train.py --config_file './configs/train/RidgeClassifier.yaml'
 ```
@@ -31,11 +31,13 @@ python train.py --config_file './configs/train/RidgeClassifier.yaml'
    macro avg       0.81      0.81      0.81     10000
 weighted avg       0.81      0.81      0.81     10000
 ```
-4. To tune the hyper-parameters, modify the config file in the "./configs/search" directory (for example, './configs/search/GridSearchCV.yaml'), then run the below command:
+4. To tune the hyper-parameters, modify the config file in the "./configs/search" directory (for example, './configs/search/GridSearchCV.yaml'), then run the below command. The best configuration will be searched in the parameter space; after that, the model will use this one to refit.
 ```
 python train.py --config_file './configs/search/GridSearchCV_SGDClassifier.yaml'
 ```
-> It will search in the parameter space to find the best configuration and use that one to refit the model. The best configuration is located in the file "./results/SGDClassifier/version_0/texts/best_config.yaml". See the "./results/SGDClassifier" directory for more details.
+  ![image](results/SGDClassifier/version_0/images/confusion_matrix.png) \
+  ![image](results/SGDClassifier/version_0/images/digit_predicted.png)
+  
   ![image](https://github.com/user-attachments/assets/777637e4-2b18-4d6f-8738-88ec4f5da347) \
   ![image](https://github.com/user-attachments/assets/43a84f8f-4341-4e0c-84e7-ea8643c3cfda)
 ```
