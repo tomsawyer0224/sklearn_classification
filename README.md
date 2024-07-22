@@ -1,10 +1,11 @@
-# This is a personal project, for educational purposes only!
+# Image classification using the scikit-learn library
 # About this project:
-1. This project provides an easy way to use many classification models in the scikit-learn library.
-2. You can train, tune the hyper-parameters, and validate any model by using only one command line.
-3. Supports two datasets (handwritten, fashion mnist) and almost classification models.
+1. This is a personal project, for educational purposes only!
+2. This project provides an easy way to use many classification models in the scikit-learn library.
+3. You can train, tune the hyper-parameters, and validate any model by using only one command line.
+4. Supports two datasets (handwritten, fashion mnist) and almost classification models.
 # How to use:
-1. Clone project; cd to sklearn_classification.
+1. Clone project, cd into sklearn_classification.
 2. Install the requirements: pip install -q -r requirements.txt.
 3. To train the model: modify the config file in the "./configs/train" directory (for example, './configs/train/RidgeClassifier.yaml'), then run the below command:
 ```
