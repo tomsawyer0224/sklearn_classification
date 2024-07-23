@@ -66,7 +66,7 @@ This project provides an easy way to use many classification models in the sciki
     python validate.py --config_file './configs/validation/SVC.yaml'
     ```
     ![image](results/SVC/version_0/learning_curve.png) \
-    ![image](results/SVC/version_0/validation_curve.png) \
+    ![image](results/SVC/version_0/validation_curve.png)
 6. For simplicity, this project doesn't provide a professional dataset object (like PyTorch). If you use other datasets, modify the python file './datasets.py'.
     - Define a new method:
         ```
