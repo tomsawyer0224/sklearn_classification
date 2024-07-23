@@ -4,7 +4,7 @@ This project provides an easy way to use many classification models in the sciki
 - This is a personal project, for educational purposes only!
 - This project was built to train, tune the hyper-parameters, and validate many models on two datasets (handwritten, fashion mnist) with only one command line.
 # How to use:
-1. Clone project, cd into sklearn_classification.
+1. Clone this repo and cd into sklearn_classification.
 2. Install the requirements: pip install -q -r requirements.txt.
 3. To train the model, modify the config file in the "./configs/train" directory (for example, './configs/train/RidgeClassifier.yaml'), then run the below command:
     ```
@@ -94,10 +94,4 @@ This project provides an easy way to use many classification models in the sciki
             self.dataset = self._get_yourdataset()
         ```
 Note: The dataset should be gray images. It is an array of shape (n_samples, height, width).
-
-
-
-
-
-
 
