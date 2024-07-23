@@ -69,31 +69,31 @@ This project provides an easy way to use many classification models in the sciki
     ![image](results/SVC/version_0/validation_curve.png) \
 6. For simplicity, this project doesn't provide a professional dataset object (like PyTorch). If you use other datasets, modify the python file './datasets.py'.
     - Define a new method:
-    ```
-    def _get_yourdataset(self):
-      # do something
-      ds = {
-            'train_data': X_train,
-            'train_label': y_train,
-            'test_data': X_test,
-            'test_label': y_test,
-            'class_name': class_name,
-            'name': 'your_dataset_name'
-      }
-      return ds
-    ```
+        ```
+        def _get_yourdataset(self):
+          # do something
+          ds = {
+                'train_data': X_train,
+                'train_label': y_train,
+                'test_data': X_test,
+                'test_label': y_test,
+                'class_name': class_name,
+                'name': 'your_dataset_name'
+          }
+          return ds
+        ```
     - Modify the '\_\_init\_\_' method:
-    ```
-    def __init__(self):
-      assert dataset in ['digit', 'fashion', 'yourdataset'], \
-      f'{dataset} is not supported'
-      if dataset == 'digit':
-        self.dataset = self._get_digit()
-      if dataset == 'fashion':
-        self.dataset = self._get_fashion()
-      if dataset == 'yourdataset':
-        self.dataset = self._get_yourdataset()
-    ```
+        ```
+        def __init__(self):
+          assert dataset in ['digit', 'fashion', 'yourdataset'], \
+          f'{dataset} is not supported'
+          if dataset == 'digit':
+            self.dataset = self._get_digit()
+          if dataset == 'fashion':
+            self.dataset = self._get_fashion()
+          if dataset == 'yourdataset':
+            self.dataset = self._get_yourdataset()
+        ```
 Note: The dataset should be gray images. It is an array of shape (n_samples, height, width).
 
 
