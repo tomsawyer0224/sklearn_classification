@@ -2,8 +2,6 @@
 This project provides an easy way to use many classification models in the scikit-learn library.
 # About this project:
 - This is a personal project, for educational purposes only!
-- You can train, tune the hyper-parameters, and validate any model with only one command line.
-- Supports two datasets (handwritten, fashion mnist) and almost classification models.
 - This project was built to train, tune the hyper-parameters, and validate any model on two datasets (handwritten, fashion mnist) with only one command line.
 # How to use:
 1. Clone project, cd into sklearn_classification.
